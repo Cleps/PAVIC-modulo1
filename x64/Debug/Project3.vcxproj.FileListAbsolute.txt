@@ -1,0 +1,16 @@
+D:\Project3\x64\Debug\Project3.vcxproj.AssemblyReference.cache
+D:\Project3\x64\Debug\Project3.exe
+D:\Project3\x64\Debug\Project3.MyForm.resources
+D:\Project3\x64\Debug\Project3.vcxproj.GenerateResource.cache
+C:\Users\clecio\Desktop\app_pp_cuda-main\x64\Debug\Project3.vcxproj.AssemblyReference.cache
+C:\Users\clecio\Desktop\app_pp_cuda-main\x64\Debug\Project3.MyForm.resources
+C:\Users\clecio\Desktop\app_pp_cuda-main\x64\Debug\Project3.vcxproj.GenerateResource.cache
+C:\Users\clecio\Desktop\app_pp_cuda-main\x64\Debug\Project3.exe
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-main\x64\Debug\Project3.vcxproj.AssemblyReference.cache
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-main\x64\Debug\Project3.MyForm.resources
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-main\x64\Debug\Project3.vcxproj.GenerateResource.cache
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-main\x64\Debug\Project3.exe
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-meu\x64\Debug\Project3.vcxproj.AssemblyReference.cache
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-meu\x64\Debug\Project3.MyForm.resources
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-meu\x64\Debug\Project3.vcxproj.GenerateResource.cache
+C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-meu\x64\Debug\Project3.exe
