@@ -14,3 +14,7 @@ C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pav
 C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-meu\x64\Debug\Project3.MyForm.resources
 C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-meu\x64\Debug\Project3.vcxproj.GenerateResource.cache
 C:\Users\clecio\Desktop\parallel_programing_pavic-master\parallel_programing_pavic-master\app_pp_cuda-meu\x64\Debug\Project3.exe
+C:\Users\clecio\Desktop\PAVIC-modulo1\x64\Debug\Project3.vcxproj.AssemblyReference.cache
+C:\Users\clecio\Desktop\PAVIC-modulo1\x64\Debug\Project3.MyForm.resources
+C:\Users\clecio\Desktop\PAVIC-modulo1\x64\Debug\Project3.vcxproj.GenerateResource.cache
+C:\Users\clecio\Desktop\PAVIC-modulo1\x64\Debug\Project3.exe

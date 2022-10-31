@@ -345,13 +345,14 @@ private: System::Void graygpu_Click(System::Object^ sender, System::EventArgs^ e
 	int width, height, channels;
 	const char* c = converted_xyz.c_str();
 	unsigned char* img = stbi_load(c, &width, &height, &channels, 3);
-	auto start = high_resolution_clock::now();
+
+	int time = 0;
+
 
 	obj.ImageToGrayGpu(img, width, height);
+	time = obj.ImageToGrayGpu(img, width, height);
 
-	auto stop = high_resolution_clock::now();
-	auto duration = duration_cast<microseconds>(stop - start);
-	time_exec->Text = "Velocity on GPU: " + duration.count() + " microseconds";
+	time_exec->Text = "Velocity on GPU: " + time.ToString() + " microseconds";
 	stbi_write_jpg("images/output.jpg", width, height, 3, img, 100);
 	img_output->ImageLocation = "images/output.jpg";
 }

@@ -4,6 +4,6 @@ class useGPU
 {
 public:
 	void adding(int* c, const int* a, const int* b, unsigned int size);
-	void ImageToGrayGpu(unsigned char* imageRGBA, int width, int height);
+	int ImageToGrayGpu(unsigned char* imageRGBA, int width, int height);
 };
 #endif

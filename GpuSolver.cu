@@ -10,6 +10,9 @@
 #include <string>
 #include <cassert>
 
+#include <chrono>
+using namespace std::chrono;
+
 
 //#define STB_IMAGE_IMPLEMENTATION
 // Write Images
@@ -66,7 +69,7 @@ void useGPU::adding(int* c, const int* a, const int* b, unsigned int size) {
 	cudaFree(dev_a);
 	cudaFree(dev_b);
 }
-void useGPU::ImageToGrayGpu(unsigned char* imageRGBA, int width, int height) {
+int useGPU::ImageToGrayGpu(unsigned char* imageRGBA, int width, int height) {
 	unsigned char* ptrImageDataGpu = nullptr;
 	assert(cudaMalloc(&ptrImageDataGpu, width * height * 3) == cudaSuccess);
 	assert(cudaMemcpy(ptrImageDataGpu, imageRGBA, width * height * 3, cudaMemcpyHostToDevice) == cudaSuccess);
@@ -75,13 +78,20 @@ void useGPU::ImageToGrayGpu(unsigned char* imageRGBA, int width, int height) {
 	dim3 blockSize(32, 32);
 	dim3 gridSize(width / blockSize.x, height / blockSize.y);
 	//ConvertImageToGrayGpu <<<gridSize, blockSize >>> (ptrImageDataGpu);
+
+	auto start = high_resolution_clock::now();
+
 	ConvertImageToGrayGpu << <gridSize, blockSize >> > (ptrImageDataGpu);
+
+	auto stop = high_resolution_clock::now();
+	auto duration = duration_cast<microseconds>(stop - start);
 
 	auto err = cudaGetLastError();
 
 	// Copy data from the gpu
 	assert(cudaMemcpy(imageRGBA, ptrImageDataGpu, width * height * 3, cudaMemcpyDeviceToHost) == cudaSuccess);
 
+	return duration.count();
 
 	// Build output filename
 	//std::string fileNameOut = "images/output.jpg";
